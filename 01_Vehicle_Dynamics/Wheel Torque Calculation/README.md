@@ -40,9 +40,7 @@ Fad = 0.5 × ρ × Cd × A × v²
 
 ### Gradient Force
 
-```
 Fg = m × g × sin(θ)
-```
 
 ### Acceleration Force
 Fa = m × a
