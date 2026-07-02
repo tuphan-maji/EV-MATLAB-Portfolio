@@ -1,7 +1,7 @@
-# Motor Power Calculation Using MATLAB
-## Objective
+Motor Power Calculation Using MATLAB
+Objective
 The objective of this project is to calculate the motor power required to propel an electric vehicle over a range of vehicle speeds. The MATLAB program computes the total tractive force acting on the vehicle and determines the corresponding motor power, helping engineers estimate the power rating required for the electric motor.
-## Theory
+Theory
 An electric vehicle motor must provide sufficient power to overcome all resistive forces acting on the vehicle while maintaining the desired speed.
 The total tractive force is the sum of:
 - Rolling Resistance Force
@@ -14,22 +14,22 @@ where:
 - **P** = Motor Power (W)
 - **Ft** = Total Tractive Force (N)
 - **v** = Vehicle Speed (m/s)
-## Mathematical Equations
-### Rolling Resistance Force
+ Mathematical Equations
+ Rolling Resistance Force
 Frr = Crr × m × g
-### Aerodynamic Drag Force
+Aerodynamic Drag Force
 Fad = 0.5 × ρ × Cd × A × v²
-### Gradient Force
+Gradient Force
 Fg = m × g × sin(θ)
-### Acceleration Force
+ Acceleration Force
 Fa = m × a
-### Total Tractive Force
+Total Tractive Force
 Ft = Frr + Fad + Fg + Fa
-### Motor Power
+ Motor Power
 P = Ft × v
 Motor Power (kW)
 P(kW) = P / 1000
-## Input Parameters
+Input Parameters
 | Parameter | Value | Unit |
 |-----------|------:|------|
 | Vehicle Mass | 1500 | kg |
@@ -41,9 +41,9 @@ P(kW) = P / 1000
 | Road Gradient | 5 | degree |
 | Vehicle Acceleration | 2 | m/s² |
 | Vehicle Speed | 0–40 | m/s |
-## MATLAB File
+ MATLAB File
 Motor_Power_Calculation.m
-## Output
+ Output
 The MATLAB program calculates:
 - Rolling Resistance Force
 - Aerodynamic Drag Force
@@ -53,18 +53,18 @@ The MATLAB program calculates:
 - Motor Power (kW)
 It also plots:
 - Motor Power vs Vehicle Speed
-## Applications
+ Applications
 - Electric Vehicle Motor Sizing
 - Motor Power Rating Selection
 - Powertrain Design
 - Battery Power Estimation
 - Vehicle Performance Analysis
 - EV Energy Management
-## Future Improvements
+ Future Improvements
 - Include motor efficiency.
 - Include gearbox efficiency.
 - Include regenerative braking.
 - Analyse different driving cycles.
 - Compare multiple EV models.
-## Author
+  Author
 Tuphan Maji
