@@ -16,11 +16,8 @@ The total tractive force consists of:
 - Acceleration Force
 
 The wheel torque is calculated using:
-
 Tw = Ft × r
-
 where:
-
 - Tw = Wheel Torque (N·m)
 - Ft = Total Tractive Force (N)
 - r = Wheel Radius (m)
@@ -30,25 +27,19 @@ contentReference[oaicite:0]{index=0}
 ## Mathematical Equations
 
 ### Rolling Resistance
-
 Frr = Crr × m × g
 
 ### Aerodynamic Drag
-
 Fad = 0.5 × ρ × Cd × A × v²
 
-
 ### Gradient Force
-
 Fg = m × g × sin(θ)
 
 ### Acceleration Force
 Fa = m × a
 
-
 ### Total Tractive Force
 Ft = Frr + Fad + Fg + Fa
-
 
 ### Wheel Torque
 Tw = Ft × r
@@ -67,7 +58,6 @@ Tw = Ft × r
 | Vehicle Acceleration | 2 | m/s² |
 | Wheel Radius | 0.30 | m |
 | Vehicle Speed | 0–40 | m/s |
-
 
 ## MATLAB File
 
@@ -110,4 +100,3 @@ Future versions of this project can include:
 ## Author
 
 Tuphan Maji
-
