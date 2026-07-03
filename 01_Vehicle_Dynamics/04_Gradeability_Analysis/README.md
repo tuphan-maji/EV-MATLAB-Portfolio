@@ -81,7 +81,7 @@ The program also plots:
 - Gradeability vs Vehicle Speed
 
 
-## Applications
+# Applications
 
 - Electric Vehicle Performance Analysis
 - Hill Climbing Capability Evaluation
@@ -91,7 +91,7 @@ The program also plots:
 - Commercial Vehicle Design
 
 
-## Future Improvements
+# Future Improvements
 
 - Include motor efficiency.
 - Include gearbox efficiency.
