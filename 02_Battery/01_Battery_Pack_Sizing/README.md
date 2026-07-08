@@ -1,12 +1,11 @@
 # Battery Pack Size Calculation Using MATLAB
 
-## Objective
+# Objective
 
 The objective of this project is to design and size a battery pack for an electric vehicle using MATLAB. The program calculates the number of cells required in series and parallel, the total number of cells, battery pack voltage, battery pack capacity, and total battery energy based on the vehicle's energy and voltage requirements.
 
----
 
-## Theory
+# Theory
 
 A battery pack is formed by connecting multiple battery cells in series and parallel to meet the required voltage, capacity, and energy requirements of an electric vehicle.
 
@@ -16,9 +15,8 @@ A battery pack is formed by connecting multiple battery cells in series and para
 
 Battery pack sizing is an important step in electric vehicle design because it directly affects vehicle range, performance, weight, and cost.
 
----
 
-## Mathematical Equations
+# Mathematical Equations
 
 ### Battery Energy
 
@@ -52,7 +50,6 @@ Pack Capacity = Np × Cell Capacity
 
 Battery Energy (kWh) = (Pack Voltage × Pack Capacity) / 1000
 
----
 
 ## Input Parameters
 
@@ -63,17 +60,13 @@ Battery Energy (kWh) = (Pack Voltage × Pack Capacity) / 1000
 | Cell Voltage | 3.7 | V |
 | Cell Capacity | 5 | Ah |
 
----
 
-## MATLAB File
+# MATLAB File
 
-```
 Battery_Pack_Size_Calculation.m
-```
 
----
 
-## Output
+# Output
 
 The MATLAB program calculates:
 
@@ -86,9 +79,7 @@ The MATLAB program calculates:
 
 The calculated results are displayed in the MATLAB Command Window.
 
----
-
-## Applications
+# Applications
 
 - Electric Vehicle Battery Pack Design
 - Battery Pack Sizing
@@ -97,9 +88,7 @@ The calculated results are displayed in the MATLAB Command Window.
 - Vehicle Range Estimation
 - Battery System Engineering
 
----
-
-## Future Improvements
+# Future Improvements
 
 Future versions of this project can include:
 
@@ -111,9 +100,7 @@ Future versions of this project can include:
 - Battery Cost Estimation
 - Battery Weight Calculation
 
----
-
-## Skills Demonstrated
+# Skills Demonstrated
 
 - MATLAB Programming
 - EV Battery Pack Design
@@ -122,9 +109,8 @@ Future versions of this project can include:
 - Engineering Calculations
 - Electric Vehicle System Design
 
----
 
-## Author
+# Author
 
 **Tuphan Maji**
 
