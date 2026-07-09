@@ -1,4 +1,5 @@
 CAN Message Parser Using Embedded C
+
 Objective
 
 The objective of this project is to develop an Embedded C program that receives a CAN data frame, parses the message bytes, and converts them into meaningful battery parameters such as voltage, current, temperature, and State of Charge (SOC). This project demonstrates the basic principle used in Electric Vehicle (EV) Battery Management Systems (BMS) and Vehicle Control Units (VCU) for CAN communication and data decoding.
