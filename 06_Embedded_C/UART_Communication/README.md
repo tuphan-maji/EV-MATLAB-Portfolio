@@ -1,4 +1,5 @@
 UART Communication Using Embedded C
+
 Objective
 
 The objective of this project is to simulate the transmission of electric vehicle battery parameters over a UART communication interface using Embedded C. The program sends battery voltage, current, temperature, and State of Charge (SOC) data through a serial communication channel. This project demonstrates the basic principle used in Battery Management Systems (BMS) and Vehicle Control Units (VCU) for serial data communication, debugging, and monitoring.
