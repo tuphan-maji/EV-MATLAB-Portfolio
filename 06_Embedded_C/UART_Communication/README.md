@@ -25,9 +25,6 @@ Battery parameter communication
 Real-time debugging concepts
 
 UART is widely used in EV systems for debugging, diagnostics, firmware updates, data logging, and communication with development tools.
-
-Input Parameters
-
 Parameter
 
 	
@@ -37,9 +34,6 @@ Value
 	
 
 Unit
-
-
-
 
 Battery Voltage
 
@@ -51,9 +45,6 @@ Battery Voltage
 
 V
 
-
-
-
 Battery Current
 
 	
@@ -63,9 +54,6 @@ Battery Current
 	
 
 A
-
-
-
 
 Battery Temperature
 
@@ -77,9 +65,6 @@ Battery Temperature
 
 °C
 
-
-
-
 Battery SOC
 
 	
@@ -89,7 +74,6 @@ Battery SOC
 	
 
 %
-
 Embedded C File
 
 UART_Communication.c
