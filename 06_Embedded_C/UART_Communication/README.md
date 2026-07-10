@@ -35,6 +35,9 @@ Value
 
 Unit
 
+
+
+
 Battery Voltage
 
 	
@@ -44,6 +47,9 @@ Battery Voltage
 	
 
 V
+
+
+
 
 Battery Current
 
@@ -55,6 +61,9 @@ Battery Current
 
 A
 
+
+
+
 Battery Temperature
 
 	
@@ -64,6 +73,9 @@ Battery Temperature
 	
 
 °C
+
+
+
 
 Battery SOC
 
