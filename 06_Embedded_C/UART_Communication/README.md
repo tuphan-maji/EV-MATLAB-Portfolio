@@ -34,6 +34,7 @@ Battery Current           30.0                   A
 Battery Temperature        32                    °C
 
 Battery SOC                82                    %
+
 Embedded C File
 
 UART_Communication.c
