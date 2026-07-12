@@ -1,4 +1,5 @@
 SPI EEPROM Interface Using Embedded C
+
 Objective
 
 The objective of this project is to develop an Embedded C program that interfaces with an external EEPROM using the SPI (Serial Peripheral Interface) protocol. The program performs both write and read operations on EEPROM memory and verifies the stored data. This project demonstrates the basic principle used in embedded systems, Battery Management Systems (BMS), Vehicle Control Units (VCU), and automotive Electronic Control Units (ECUs) for non-volatile data storage and retrieval.
