@@ -1,10 +1,10 @@
-CAN Message Parser Using Embedded C
+# CAN Message Parser Using Embedded C
 
-Objective
+## Objective
 
 The objective of this project is to develop an Embedded C program that receives a CAN data frame, parses the message bytes, and converts them into meaningful battery parameters such as voltage, current, temperature, and State of Charge (SOC). This project demonstrates the basic principle used in Electric Vehicle (EV) Battery Management Systems (BMS) and Vehicle Control Units (VCU) for CAN communication and data decoding.
 
-Theory
+## Theory
 
 The Controller Area Network (CAN) bus is one of the most widely used communication protocols in electric vehicles. It enables reliable communication between electronic control units (ECUs) such as the Battery Management System (BMS), Vehicle Control Unit (VCU), Motor Controller, and Instrument Cluster.
 
@@ -12,142 +12,67 @@ CAN messages contain raw hexadecimal data that must be decoded by software befor
 
 During CAN message decoding:
 
-Raw hexadecimal data is received from the CAN frame.
+* Raw hexadecimal data is received from the CAN frame.
 
-Multiple bytes are combined into 16-bit values.
+* Multiple bytes are combined into 16-bit values.
 
-Scaling factors are applied to convert raw data into engineering units.
+* Scaling factors are applied to convert raw data into engineering units.
 
-Battery parameters are displayed for monitoring and diagnostics.
+* Battery parameters are displayed for monitoring and diagnostics.
 
 This method is widely used because of its fast computation and suitability for real-time embedded automotive systems.
 
-Mathematical Equations
+## Mathematical Equations
 
-Battery Voltage
+### Battery Voltage
 
 Voltage_raw = (Byte0 << 8) | Byte1
 
 Battery Voltage (V) = Voltage_raw / 10.0
 
-Battery Current
+### Battery Current
 
 Current_raw = (Byte2 << 8) | Byte3
 
 Battery Current (A) = Current_raw / 10.0
 
-Battery Temperature
+### Battery Temperature
 
 Temperature (°C) = Byte4
 
-Battery SOC
+### Battery SOC
 
 SOC (%) = Byte5
 
-Input Parameters
+## Input Parameters
 
-Parameter
+| Parameter | Value |
+| --------- | ----- |
+| CAN ID    | 0x180 |
+| Byte0     | 0x0C  |
+| Byte1     | 0x80  |
+| Byte2     | 0x01  |
+| Byte3     | 0x2C  |
+| Byte4     | 0x20  |
+| Byte5     | 0x52  |
+| Byte6     | 0x00  |
+| Byte7     | 0x00  |
 
-	
-
-Value
-
-
-
-
-CAN ID
-
-	
-
-0x180
-
-
-
-
-Byte0
-
-	
-
-0x0C
-
-
-
-
-Byte1
-
-	
-
-0x80
-
-
-
-
-Byte2
-
-	
-
-0x01
-
-
-
-
-Byte3
-
-	
-
-0x2C
-
-
-
-
-Byte4
-
-	
-
-0x20
-
-
-
-
-Byte5
-
-	
-
-0x52
-
-
-
-
-Byte6
-
-	
-
-0x00
-
-
-
-
-Byte7
-
-	
-
-0x00
-
-Embedded C File
+## Embedded C File
 
 CAN_Message_Parser.c
 
-Output
+## Output
 
 The program calculates:
 
-Battery Voltage (V)
+* Battery Voltage (V)
 
-Battery Current (A)
+* Battery Current (A)
 
-Battery Temperature (°C)
+* Battery Temperature (°C)
 
-Battery State of Charge (SOC %)
+* Battery State of Charge (SOC %)
 
 Sample Output:
 
@@ -159,38 +84,38 @@ Battery Temperature = 32 C
 
 Battery SOC = 82 %
 
-Applications
+## Applications
 
-Battery Management System (BMS)
+* Battery Management System (BMS)
 
-Vehicle Control Unit (VCU)
+* Vehicle Control Unit (VCU)
 
-Instrument Cluster Communication
+* Instrument Cluster Communication
 
-Motor Controller Communication
+* Motor Controller Communication
 
-Automotive Diagnostics
+* Automotive Diagnostics
 
-Embedded Automotive Software
+* Embedded Automotive Software
 
-EV Data Monitoring Systems
+* EV Data Monitoring Systems
 
-Future Improvements
+## Future Improvements
 
-Validate CAN ID before parsing.
+* Validate CAN ID before parsing.
 
-Parse multiple CAN frames.
+* Parse multiple CAN frames.
 
-Add fault code decoding.
+* Add fault code decoding.
 
-Implement checksum verification.
+* Implement checksum verification.
 
-Add signed current decoding.
+* Add signed current decoding.
 
-Integrate UART debugging output.
+* Integrate UART debugging output.
 
-Simulate real-time CAN message reception.
+* Simulate real-time CAN message reception.
 
-Author
+## Author
 
 Tuphan Maji
