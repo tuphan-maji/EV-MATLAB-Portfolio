@@ -1,155 +1,105 @@
-Battery Thermal Analysis - README.md
-Objective
+# Battery Thermal Analysis
+
+## Objective
 
 To analyze the temperature rise of a lithium-ion battery during charging and discharging using a MATLAB thermal model. The program estimates heat generation, temperature increase, and battery thermal behavior over time.
 
-Theory
+## Theory
 
 Lithium-ion batteries generate heat due to internal resistance when current flows through the cell. Excessive temperature can reduce battery life, affect performance, and increase safety risks.
 
 The thermal analysis considers:
 
-Heat generation inside the battery
+* Heat generation inside the battery
 
-Temperature rise due to generated heat
+* Temperature rise due to generated heat
 
-Heat dissipation to the environment
+* Heat dissipation to the environment
 
-Battery temperature variation with time
+* Battery temperature variation with time
 
-Mathematical Equations
+## Mathematical Equations
 
-Heat Generation
+### Heat Generation
 
 Q = I²R
 
 Where:
 
-Q = Heat generated (W)
+* Q = Heat generated (W)
 
-I = Battery current (A)
+* I = Battery current (A)
 
-R = Internal resistance (Ω)
+* R = Internal resistance (Ω)
 
-Temperature Rise
+### Temperature Rise
 
 ΔT = Q / (m × Cp)
 
 Where:
 
-ΔT = Temperature rise (°C)
+* ΔT = Temperature rise (°C)
 
-m = Battery mass (kg)
+* m = Battery mass (kg)
 
-Cp = Specific heat capacity (J/kg·°C)
+* Cp = Specific heat capacity (J/kg·°C)
 
-Battery Temperature
+### Battery Temperature
 
 T = Tambient + ΔT
 
-Input Parameters
+## Input Parameters
 
-Parameter
+| Parameter              | Value       |
+| ---------------------- | ----------- |
+| Battery Current        | 50 A        |
+| Internal Resistance    | 0.01 Ω      |
+| Battery Mass           | 2 kg        |
+| Specific Heat Capacity | 900 J/kg·°C |
+| Ambient Temperature    | 25 °C       |
+| Simulation Time        | 600 s       |
 
-	
-
-Value
-
-
-
-
-Battery Current
-
-	
-
-50 A
-
-
-
-
-Internal Resistance
-
-	
-
-0.01 Ω
-
-
-
-
-Battery Mass
-
-	
-
-2 kg
-
-
-
-
-Specific Heat Capacity
-
-	
-
-900 J/kg·°C
-
-
-
-
-Ambient Temperature
-
-	
-
-25 °C
-
-
-
-
-Simulation Time
-
-	
-
-600 s
-
-MATLAB File
+## MATLAB File
 
 battery_thermal_analysis.m
 
-Output
+## Output
 
 The program generates:
 
-Heat generation profile
+* Heat generation profile
 
-Temperature rise calculation
+* Temperature rise calculation
 
-Battery temperature vs time graph
+* Battery temperature vs time graph
 
-Final battery temperature estimate
+* Final battery temperature estimate
 
-Applications
+## Applications
 
-Battery Management System (BMS) design
+* Battery Management System (BMS) design
 
-EV battery thermal monitoring
+* EV battery thermal monitoring
 
-Fast charging thermal analysis
+* Fast charging thermal analysis
 
-Cell and battery pack temperature prediction
+* Cell and battery pack temperature prediction
 
-Thermal safety assessment
+* Thermal safety assessment
 
-Future Improvements
+## Future Improvements
 
-Add liquid or air cooling model
+* Add liquid or air cooling model
 
-Include convection heat transfer
+* Include convection heat transfer
 
-Model an entire battery pack
+* Model an entire battery pack
 
-Add SOC-dependent heat generation
+* Add SOC-dependent heat generation
 
-Implement real-time thermal estimation
+* Implement real-time thermal estimation
 
-Author
+## Author
 
 Tuphan Maji
 
