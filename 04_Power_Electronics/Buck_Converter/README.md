@@ -2,13 +2,13 @@
 
 ## Objective
 
-The objective of this project is to design and simulate a DC-DC Buck Converter using MATLAB/Simulink to convert a higher DC input voltage into a lower regulated DC output voltage with high efficiency. The project demonstrates converter operation, output voltage regulation, inductor current behavior, and ripple analysis under Continuous Conduction Mode (CCM).
+This project presents the design and simulation of a **DC-DC Buck Converter** using **MATLAB/Simulink**. The converter efficiently steps down a higher DC input voltage to a regulated lower output voltage while demonstrating PWM control, inductor current behavior, voltage regulation, and ripple analysis under **Continuous Conduction Mode (CCM)**.
 
 ---
 
-## Project Overview
+## Project Description
 
-A Buck Converter is a step-down DC-DC power converter widely used in battery-powered systems, electric vehicles (EVs), renewable energy systems, and power supplies. It uses a high-frequency switching device along with an inductor and capacitor to efficiently reduce the input voltage.
+A **Buck Converter** is a high-efficiency step-down DC-DC converter widely used in Electric Vehicles (EVs), Battery Management Systems (BMS), renewable energy systems, and regulated power supplies. The output voltage is controlled by varying the duty cycle of a high-frequency PWM signal driving the MOSFET switch.
 
 ---
 
@@ -16,38 +16,23 @@ A Buck Converter is a step-down DC-DC power converter widely used in battery-pow
 
 The Buck Converter operates in two switching states.
 
-### Switch ON
+### ON State
 
 - MOSFET is turned ON.
-- Input voltage is applied to the inductor.
-- Inductor stores energy.
-- Load receives power from the source.
+- The input voltage is applied across the inductor.
+- The inductor stores energy.
+- The load receives power directly from the source.
 - Inductor current increases linearly.
 
-### Switch OFF
+### OFF State
 
 - MOSFET is turned OFF.
-- Freewheeling diode conducts.
-- Inductor releases stored energy.
-- Load continues receiving power.
+- The freewheeling diode conducts.
+- The inductor releases its stored energy.
+- The load continues to receive current.
 - Inductor current decreases linearly.
 
-By controlling the duty cycle of the PWM signal, the average output voltage is regulated.
-
----
-
-## Circuit Components
-
-- DC Voltage Source
-- MOSFET Switch
-- Freewheeling Diode
-- Inductor (L)
-- Capacitor (C)
-- Resistive Load
-- PWM Generator
-- Voltage Measurement
-- Current Measurement
-- Scope
+The average output voltage is regulated by adjusting the PWM duty cycle.
 
 ---
 
@@ -55,54 +40,40 @@ By controlling the duty cycle of the PWM signal, the average output voltage is r
 
 ### Output Voltage
 
-\[
-V_o = D \times V_{in}
-\]
+**Vo = D × Vin**
 
-where
+Where:
 
-- \(V_o\) = Output Voltage
-- \(V_{in}\) = Input Voltage
-- \(D\) = Duty Cycle
-
----
+- **Vo** = Output Voltage (V)
+- **Vin** = Input Voltage (V)
+- **D** = Duty Cycle
 
 ### Duty Cycle
 
-\[
-D=\frac{V_o}{V_{in}}
-\]
+**D = Vo / Vin**
 
----
+### Inductor Ripple Current
 
-### Inductor Current Ripple
-
-\[
-\Delta I_L=\frac{(V_{in}-V_o)D}{Lf_s}
-\]
-
----
+**ΔIL = ((Vin − Vo) × D) / (L × fs)**
 
 ### Output Voltage Ripple
 
-\[
-\Delta V_o=\frac{\Delta I_L}{8Cf_s}
-\]
-
----
+**ΔVo = ΔIL / (8 × C × fs)**
 
 ### Output Power
 
-\[
-P_o=V_o\times I_o
-\]
+**Po = Vo × Io**
+
+Where:
+
+- **Io** = Output Current (A)
 
 ---
 
 ## Simulation Parameters
 
 | Parameter | Value |
-|-----------|--------|
+|------------|--------|
 | Input Voltage | 48 V |
 | Output Voltage | 24 V |
 | Switching Frequency | 20 kHz |
@@ -111,60 +82,38 @@ P_o=V_o\times I_o
 | Capacitor | 434 µF |
 | Load Resistance | 1.25 Ω |
 
-*(Modify these values according to your project.)*
+> Modify these values according to your project requirements.
 
 ---
 
-## MATLAB/Simulink Model
+## Simulink Model
 
-The Simulink model contains:
+The model consists of the following components:
 
+- DC Voltage Source
 - PWM Generator
 - MOSFET Switch
 - Freewheeling Diode
-- LC Filter
+- Inductor (L)
+- Capacitor (C)
 - Resistive Load
-- Voltage Sensor
-- Current Sensor
-- Scope Blocks
+- Voltage Measurement Block
+- Current Measurement Block
+- Scope
 
 ---
 
-## Simulation Outputs
+## Simulation Results
 
-The following waveforms are observed:
+The simulation verifies the following:
 
-### Output Voltage
-
-- Regulated DC output
-- Small ripple
-
-### Inductor Current
-
-- Triangular waveform
-- Continuous current
-
-### MOSFET Gate Pulse
-
-- PWM switching signal
-
-### MOSFET Voltage
-
-- Switching waveform
-
-### Output Current
-
-- Stable load current
-
----
-
-## Expected Results
-
-- Stable regulated output voltage
+- Regulated output voltage
 - Continuous Conduction Mode (CCM)
-- Reduced output ripple
-- High conversion efficiency
-- Stable inductor current
+- Triangular inductor current waveform
+- MOSFET switching voltage
+- PWM gate pulse
+- Stable load current
+- Low output voltage ripple
 
 ---
 
@@ -172,36 +121,25 @@ The following waveforms are observed:
 
 - Electric Vehicle Battery Systems
 - Battery Chargers
+- Battery Management Systems (BMS)
+- Renewable Energy Systems
 - DC Power Supplies
-- Solar Energy Systems
-- Embedded Electronics
-- Portable Devices
-- Industrial Automation
+- Embedded Systems
+- Industrial Power Electronics
 - LED Drivers
-
----
-
-## Advantages
-
-- High efficiency (typically 90–98%)
-- Simple circuit design
-- Low heat generation
-- Small filter size
-- Fast voltage regulation
-- Reliable operation
 
 ---
 
 ## Future Improvements
 
-- Closed-loop PI Controller
+- Closed-Loop PI Controller
 - PID Controller
-- Digital Control using MATLAB
 - Synchronous Buck Converter
+- Digital Control Implementation
 - Battery Charging Algorithm
-- Efficiency Calculation
+- Converter Efficiency Analysis
 - Thermal Analysis
-- Hardware Implementation
+- Hardware Prototype Development
 - Embedded C Code Generation
 
 ---
@@ -214,35 +152,45 @@ The following waveforms are observed:
 
 ---
 
-## Folder Structure
+## Project Structure
 
-```
+```text
 Buck_Converter/
 │
 ├── Buck_Converter.slx
-├── Buck_Converter.m
 ├── README.md
 ├── Images/
 │   ├── Circuit.png
 │   ├── OutputVoltage.png
 │   ├── InductorCurrent.png
+│   ├── MOSFETVoltage.png
 │   └── PWM.png
 ```
 
 ---
 
-## Learning Outcomes
+## Expected Output
 
-After completing this project, you will understand:
+The simulation produces the following waveforms:
 
-- PWM control
-- Duty cycle control
-- Buck converter operation
+- Output Voltage
+- Output Current
+- Inductor Current
+- MOSFET Voltage
+- PWM Gate Pulse
+
+---
+
+## Skills Demonstrated
+
+- MATLAB Programming
+- Simulink Modeling
+- Power Electronics
+- PWM Control
+- DC-DC Converter Design
 - Continuous Conduction Mode (CCM)
-- Inductor current ripple
-- Output voltage ripple
-- MATLAB/Simulink modeling
-- DC-DC converter design
+- Voltage Regulation
+- Ripple Analysis
 
 ---
 
@@ -250,16 +198,16 @@ After completing this project, you will understand:
 
 **Tuphan Maji**
 
-EV Engineer | MATLAB | Simulink | Embedded C | Battery Management System (BMS) | Power Electronics | Electric Vehicle Technology
+**EV Engineer | MATLAB | Simulink | Embedded C | Battery Management System (BMS) | Power Electronics | Electric Vehicle Technology**
 
 ---
 
 ## License
 
-This project is released under the MIT License.
+This project is licensed under the **MIT License**.
 
 ---
 
-## Keywords
+## Repository Topics
 
-Buck Converter, DC-DC Converter, MATLAB, Simulink, Power Electronics, PWM, MOSFET, Inductor, Capacitor, Embedded Systems, Electric Vehicle, Battery Charger, Voltage Regulator, CCM.
+`Buck Converter` • `MATLAB` • `Simulink` • `Power Electronics` • `DC-DC Converter` • `PWM` • `MOSFET` • `Electric Vehicle` • `Battery Management System` • `Embedded Systems`
