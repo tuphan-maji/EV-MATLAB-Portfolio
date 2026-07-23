@@ -144,30 +144,6 @@ The simulation verifies the following:
 
 ---
 
-## Software Requirements
-
-- MATLAB R2022a or later
-- Simulink
-- Simscape Electrical (Recommended)
-
----
-
-## Project Structure
-
-```text
-Buck_Converter/
-│
-├── Buck_Converter.slx
-├── README.md
-├── Images/
-│   ├── Circuit.png
-│   ├── OutputVoltage.png
-│   ├── InductorCurrent.png
-│   ├── MOSFETVoltage.png
-│   └── PWM.png
-```
-
----
 
 ## Expected Output
 
