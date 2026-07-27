@@ -1,6 +1,6 @@
 # DC-DC Boost Converter Design Using MATLAB
 
-## Objective
+# Objective
 
 The objective of this project is to design and analyze a **DC-DC Boost Converter** using MATLAB. The program calculates the required converter parameters, including duty cycle, input/output current, inductor value, capacitor value, component ratings, and generates PWM, inductor current, and output voltage waveforms under **Continuous Conduction Mode (CCM)**.
 
