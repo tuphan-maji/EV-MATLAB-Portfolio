@@ -1,6 +1,6 @@
-======================================================================
+
                 BUCK-BOOST CONVERTER ANALYSIS USING MATLAB
-======================================================================
+
 
 Project Title:
 Design and Analysis of an Inverting Buck-Boost Converter
