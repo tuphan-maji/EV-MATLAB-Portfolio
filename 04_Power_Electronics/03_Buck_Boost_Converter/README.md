@@ -1,8 +1,8 @@
 
-              ╔══════════════════════════════════════════════════════════════════════╗
-║                  BUCK-BOOST CONVERTER ANALYSIS                     ║
-║                    MATLAB SIMULATION PROJECT                       ║
-╚══════════════════════════════════════════════════════════════════════╝
+              
+                 BUCK-BOOST CONVERTER ANALYSIS                    
+                  MATLAB SIMULATION PROJECT                       
+════════════════════════════════════════════════════════════════════
 
 Author            : Tuphan Maji
 Converter Type    : Inverting Buck-Boost Converter
